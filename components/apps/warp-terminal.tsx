@@ -1,4 +1,6 @@
 // biome-ignore lint/a11y/useButtonType: Interactive terminal component
+/** biome-ignore-all lint/correctness/useExhaustiveDependencies: <explanation> */
+/** biome-ignore-all lint/correctness/noChildrenProp: <explanation> */
 /** biome-ignore-all lint/a11y/useButtonType: <explanation> */
 'use client'
 

@@ -179,11 +179,11 @@ export default function OSWindow({
       style={{ left: (positionProp ?? position).x, top: (positionProp ?? position).y, width: (sizeProp ?? size).width, height: (sizeProp ?? size).height, zIndex: getZIndex(id) }}
       onPointerDown={() => { setFocused(true); bringToFront(id) }}
     >
-      <div className={cn('flex h-full w-full flex-col overflow-hidden rounded-2xl border shadow-2xl', blur ? 'backdrop-blur-xl' : '', bgClassName, focused ? 'border-white/20 ring-1 ring-white/15' : 'border-white/10')}>
+      <div className={cn('flex h-full w-full flex-col overflow-hidden rounded-2xl border shadow-2xl', blur ? 'backdrop-blur-lg' : '', bgClassName, focused ? 'border-white/20 ring-1 ring-white/15' : 'border-white/10')}>
         <div
           ref={headerRef}
           onPointerDown={onDragStart}
-          className="flex cursor-grab items-center gap-2 border-b border-white/10 bg-black/40 px-3 py-2"
+          className="flex cursor-grab items-center gap-2 border-b border-white/10 bg-background/70 px-3 py-2"
         >
           <div className="flex items-center gap-2 pr-2">
             <button 
